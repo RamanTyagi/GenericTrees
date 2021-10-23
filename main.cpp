@@ -79,7 +79,7 @@ int maximum(Node *p)
     return max;
 }
 /*
- ch - current height
+ ch - child height
  */
 int height(Node *p)
 {

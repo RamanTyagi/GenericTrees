@@ -654,10 +654,10 @@ class traversal_pair
  1. if state == -1
     -> Push in preorder string
     -> state++
- 2. if state>=0 && state<st.top().node->children.size()
+ 2. if state>=0 && state<st.top().node->children.size()    --> Iska mtlb hai saare children traverse nhi hue to baakio childrens ko bhi dalo stack mein!!    
     ->state++
     ->Push children [state-1] wala
- 3. if state == st.top().node->children.size()
+ 3. if state == st.top().node->children.size()             --> Iska mtlb hai saare children traverse ho chuke hai to postOrder mein dalo or stack se kro pop!!
     -> push in postorder string
     -> pop from the stack
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
